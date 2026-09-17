@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trajano Creative | Produtor Audiovisual & Videomaker</title>
+    <meta name="description" content="Produtor audiovisual e videomaker com mais de 10 anos de mercado. Captação externa, edição dinâmica, Reels, TikTok e cobertura de eventos.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="imgcreative.PNG">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome para Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,800;1,900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#0a0a0a',
+                            card: '#141414',
+                            accent: '#8b5cf6',
+                            accentHover: '#7c3aed',
+                            yellow: '#facc15'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .aspect-reels {
+            aspect-ratio: 9 / 16;
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-gray-100 font-sans selection:bg-brand-accent selection:text-white">
+
+    <!-- HEADER / NAVBAR -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-brand-dark/90 backdrop-blur-md border-b border-gray-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="text-xl sm:text-2xl font-black tracking-wider text-white flex items-center gap-3">
+                <img src="imgcreative.PNG" alt="Kauã Zoeira Logo" class="w-10 h-10 rounded-full object-cover border-2 border-brand-yellow">
+                <span>TRAJANO <span class="text-brand-yellow">CREATIVE</span></span>
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+                <a href="#sobre" class="hover:text-brand-yellow transition-colors">Sobre Mim</a>
+                <a href="#servicos" class="hover:text-brand-yellow transition-colors">Serviços</a>
+                <a href="#como-funciona" class="hover:text-brand-yellow transition-colors">Como Funciona</a>
+                <a href="#portfolio" class="hover:text-brand-yellow transition-colors">Portfólio</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="https://wa.me/5582991649920?text=Olá%20Kauã,%20vim%20pelo%20site%20e%20quero%20um%20orçamento%20de%20audiovisual!" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-green-600 hover:bg-green-500 text-white px-4 py-2.5 rounded-full font-semibold text-sm transition-all shadow-lg shadow-green-600/20">
+                    <i class="fab fa-whatsapp text-lg" aria-hidden="true"></i> Orçamento
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-gradient-to-b from-brand-card to-brand-dark">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-brand-accent/15 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center relative z-10">
+            <span class="inline-block py-1 px-4 rounded-full bg-brand-accent/10 border border-brand-accent/30 text-brand-yellow text-xs sm:text-sm font-semibold tracking-wide uppercase mb-6 shadow-sm">
+                +10 Anos de Mercado no Audiovisual
+            </span>
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 uppercase">
+                Transformando ideias em <br class="hidden sm:inline"> <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow to-orange-500">Conteúdo de Impacto</span>
+            </h1>
+            <p class="max-w-2xl mx-auto text-base sm:text-lg text-gray-400 mb-10 leading-relaxed">
+                Gravações profissionais, edições altamente dinâmicas e produções visuais estratégicas para elevar a sua marca, negócio ou perfil ao topo.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#portfolio" class="w-full sm:w-auto bg-brand-yellow text-brand-dark font-bold px-8 py-4 rounded-xl hover:bg-yellow-400 transition-all shadow-xl shadow-brand-yellow/10">
+                    Ver Portfólio de Reels
+                </a>
+                <a href="https://wa.me/5582991649920?text=Olá%20Kauã,%20quero%20falar%20sobre%20um%20projeto%20audiovisual!" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-brand-card border border-gray-700 hover:border-green-500 text-white font-semibold px-8 py-4 rounded-xl transition-all flex items-center justify-center gap-3">
+                    <i class="fab fa-whatsapp text-green-500 text-xl" aria-hidden="true"></i> Falar no WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO SOBRE MIM -->
+    <section id="sobre" class="py-24 bg-brand-card relative border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-brand-yellow to-brand-accent rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-1000"></div>
+                    <div class="relative rounded-2xl overflow-hidden bg-gray-900 border border-gray-800 aspect-[4/5]">
+                        <img src="imgkauabio.JPG" alt="Kauã Zoeira - Produtor Audiovisual" class="w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-xs font-bold tracking-widest text-brand-yellow uppercase mb-3">Bastidores & Experiência</h2>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold text-white mb-6">Autoridade e Olhar Cinematográfico</h3>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Com mais de 10 anos de vivência no mercado audiovisual, construí uma trajetória marcada por entregas consistentes, técnica refinada e produções de grande relevância.
+                    </p>
+                    <p class="text-gray-400 mb-8 leading-relaxed">
+                        Minha missão é traduzir a identidade de cada cliente — seja marca, profissional liberal ou grande página — em vídeos magnéticos que prendem a atenção do primeiro ao último segundo.
+                    </p>
+
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                        <div class="bg-brand-dark p-4 rounded-xl border border-gray-800">
+                            <span class="block text-2xl sm:text-3xl font-black text-brand-yellow mb-1">+10 Anos</span>
+                            <span class="text-xs text-gray-400">De Experiência</span>
+                        </div>
+                        <div class="bg-brand-dark p-4 rounded-xl border border-gray-800">
+                            <span class="block text-2xl sm:text-3xl font-black text-brand-yellow mb-1">Especial</span>
+                            <span class="text-xs text-gray-400">Retenção de Público</span>
+                        </div>
+                        <div class="bg-brand-dark p-4 rounded-xl border border-gray-800 col-span-2 sm:col-span-1">
+                            <span class="block text-2xl sm:text-3xl font-black text-brand-yellow mb-1">100%</span>
+                            <span class="text-xs text-gray-400">Profissionalismo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE SERVIÇOS -->
+    <section id="servicos" class="py-24 bg-brand-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold tracking-widest text-brand-yellow uppercase mb-3">O que eu faço</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Soluções Completas em Audiovisual</h3>
+                <p class="text-gray-400">Do conceito criativo à pós-produção impecável.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-brand-card p-8 rounded-2xl border border-gray-800 hover:border-brand-yellow/50 transition-all group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-yellow/10 flex items-center justify-center text-brand-yellow text-2xl mb-6 group-hover:scale-110 transition-transform"><i class="fas fa-video" aria-hidden="true"></i></div>
+                    <h4 class="text-xl font-bold text-white mb-3">Captação Externa & Estúdio</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Gravação com múltiplos ângulos, iluminação dedicada e áudio cristalino.</p>
+                </div>
+                <div class="bg-brand-card p-8 rounded-2xl border border-gray-800 hover:border-brand-yellow/50 transition-all group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-yellow/10 flex items-center justify-center text-brand-yellow text-2xl mb-6 group-hover:scale-110 transition-transform"><i class="fas fa-cut" aria-hidden="true"></i></div>
+                    <h4 class="text-xl font-bold text-white mb-3">Edição Dinâmica</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Cortes ágeis, sound design imersivo, legendas dinâmicas e correção de cor profissional.</p>
+                </div>
+                <div class="bg-brand-card p-8 rounded-2xl border border-gray-800 hover:border-brand-yellow/50 transition-all group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-yellow/10 flex items-center justify-center text-brand-yellow text-2xl mb-6 group-hover:scale-110 transition-transform"><i class="fas fa-mobile-screen" aria-hidden="true"></i></div>
+                    <h4 class="text-xl font-bold text-white mb-3">Reels & TikTok</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Conteúdos verticais planejados para prender a atenção nos primeiros segundos.</p>
+                </div>
+                <div class="bg-brand-card p-8 rounded-2xl border border-gray-800 hover:border-brand-yellow/50 transition-all group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-yellow/10 flex items-center justify-center text-brand-yellow text-2xl mb-6 group-hover:scale-110 transition-transform"><i class="fas fa-camera-retro" aria-hidden="true"></i></div>
+                    <h4 class="text-xl font-bold text-white mb-3">Cobertura de Eventos</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Registro ágil de eventos corporativos, festas e ativações de marca com entrega rápida.</p>
+                </div>
+                <div class="bg-brand-card p-8 rounded-2xl border border-gray-800 hover:border-brand-yellow/50 transition-all group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-yellow/10 flex items-center justify-center text-brand-yellow text-2xl mb-6 group-hover:scale-110 transition-transform"><i class="fas fa-microphone-lines" aria-hidden="true"></i></div>
+                    <h4 class="text-xl font-bold text-white mb-3">Podcasts & Entrevistas</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Estrutura completa para captação de podcasts e corte inteligente de melhores momentos.</p>
+                </div>
+                <div class="bg-brand-card p-8 rounded-2xl border border-gray-800 hover:border-brand-yellow/50 transition-all group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-yellow/10 flex items-center justify-center text-brand-yellow text-2xl mb-6 group-hover:scale-110 transition-transform"><i class="fas fa-clapperboard" aria-hidden="true"></i></div>
+                    <h4 class="text-xl font-bold text-white mb-3">Direção de Cena</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Suporte de direção no set para garantir postura, naturalidade e melhor atuação frente às câmeras.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO COMO FUNCIONA -->
+    <section id="como-funciona" class="py-24 bg-brand-card border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold tracking-widest text-brand-yellow uppercase mb-3">Metodologia</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Como Funciona o Processo</h3>
+                <p class="text-gray-400">Organização e transparência do briefing à entrega final.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-brand-dark p-8 rounded-2xl border border-gray-800 relative">
+                    <span class="absolute -top-4 left-6 w-10 h-10 rounded-xl bg-brand-yellow text-brand-dark font-black text-lg flex items-center justify-center shadow-lg">01</span>
+                    <div class="mt-4 mb-4 text-brand-yellow text-3xl"><i class="fas fa-comments" aria-hidden="true"></i></div>
+                    <h4 class="text-xl font-bold text-white mb-2">Alinhamento</h4>
+                    <p class="text-gray-400 text-sm">Você me conta sua demanda e objetivos. Alinhamos a melhor estratégia.</p>
+                </div>
+                <div class="bg-brand-dark p-8 rounded-2xl border border-gray-800 relative">
+                    <span class="absolute -top-4 left-6 w-10 h-10 rounded-xl bg-brand-yellow text-brand-dark font-black text-lg flex items-center justify-center shadow-lg">02</span>
+                    <div class="mt-4 mb-4 text-brand-yellow text-3xl"><i class="fas fa-file-pen" aria-hidden="true"></i></div>
+                    <h4 class="text-xl font-bold text-white mb-2">Roteiro</h4>
+                    <p class="text-gray-400 text-sm">Estruturação de ideias, ganchos magnéticos e dinâmica de gravação.</p>
+                </div>
+                <div class="bg-brand-dark p-8 rounded-2xl border border-gray-800 relative">
+                    <span class="absolute -top-4 left-6 w-10 h-10 rounded-xl bg-brand-yellow text-brand-dark font-black text-lg flex items-center justify-center shadow-lg">03</span>
+                    <div class="mt-4 mb-4 text-brand-yellow text-3xl"><i class="fas fa-video" aria-hidden="true"></i></div>
+                    <h4 class="text-xl font-bold text-white mb-2">Produção</h4>
+                    <p class="text-gray-400 text-sm">Execução no set com equipamentos profissionais e direção atenta.</p>
+                </div>
+                <div class="bg-brand-dark p-8 rounded-2xl border border-gray-800 relative">
+                    <span class="absolute -top-4 left-6 w-10 h-10 rounded-xl bg-brand-yellow text-brand-dark font-black text-lg flex items-center justify-center shadow-lg">04</span>
+                    <div class="mt-4 mb-4 text-brand-yellow text-3xl"><i class="fas fa-circle-check" aria-hidden="true"></i></div>
+                    <h4 class="text-xl font-bold text-white mb-2">Entrega</h4>
+                    <p class="text-gray-400 text-sm">Pós-produção refinada, ajustes pontuais e arquivos prontos para postar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE PORTFÓLIO EM CARROSSEL REELS COM CAPAS -->
+    <section id="portfolio" class="py-24 bg-brand-dark border-t border-gray-800 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Cabeçalho da Seção + Setas de Controle -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <h2 class="text-xs font-bold tracking-widest text-brand-yellow uppercase mb-3">Casos de Sucesso</h2>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Portfólio de Reels</h3>
+                    <p class="text-gray-400 mt-2">Navegue pelos trabalhos realizados para diferentes marcas e profissionais.</p>
+                </div>
+                
+                <!-- Botões de Navegação Manual Estáveis -->
+                <div class="flex items-center gap-3 mt-6 md:mt-0">
+                    <button onclick="scrollPortfolio('left')" class="w-12 h-12 rounded-xl bg-brand-card border border-gray-700 hover:border-brand-yellow text-white flex items-center justify-center transition-all hover:bg-gray-800 active:scale-95 cursor-pointer shadow-md" aria-label="Rolar para esquerda">
+                        <i class="fas fa-arrow-left" aria-hidden="true"></i>
+                    </button>
+                    <button onclick="scrollPortfolio('right')" class="w-12 h-12 rounded-xl bg-brand-card border border-gray-700 hover:border-brand-yellow text-white flex items-center justify-center transition-all hover:bg-gray-800 active:scale-95 cursor-pointer shadow-md" aria-label="Rolar para direita">
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Container do Carrossel com Capas -->
+            <div id="video-carousel" class="flex gap-6 overflow-x-auto no-scrollbar scroll-smooth pb-6 px-1 select-none">
+                
+                <!-- CARD 1: Super Wash -->
+                <div class="min-w-[270px] sm:min-w-[290px] lg:min-w-[310px] bg-brand-card border border-gray-800 rounded-2xl overflow-hidden group hover:border-brand-yellow/50 transition-all flex flex-col justify-between shadow-lg">
+                    <div>
+                        <div class="aspect-reels bg-gray-900 relative overflow-hidden">
+                            <img src="imgsuperwash.png" alt="Super Wash" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none"></div>
+                            
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-12 h-12 rounded-full bg-brand-yellow/90 text-brand-dark flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
+                                    <i class="fas fa-play ml-0.5 text-lg" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            
+                            <span class="absolute bottom-4 left-4 z-20 text-xs bg-brand-dark/90 px-2.5 py-1 rounded-md border border-gray-700 font-medium text-brand-yellow">Reel Oficial</span>
+                        </div>
+                        <div class="p-5">
+                            <span class="text-xs font-semibold text-brand-yellow uppercase tracking-wider">Super Wash</span>
+                            <h4 class="text-lg font-bold text-white mt-1 mb-1">Campanha Promocional</h4>
+                            <p class="text-gray-400 text-xs mb-4 leading-relaxed">Vídeo dinâmico focado em conversão e destaque de serviços.</p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-0">
+                        <a href="https://www.instagram.com/reel/DYnPrAig2ib/?stkn=MWpmcWs1NmU3Y3BiOQ==" target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-gray-800 hover:bg-brand-yellow hover:text-brand-dark text-white font-semibold py-3 rounded-xl text-sm transition-all shadow-sm">
+                            <i class="fab fa-instagram mr-2" aria-hidden="true"></i> Assistir no Instagram
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 2: Walter Lucena - Advogado -->
+                <div class="min-w-[270px] sm:min-w-[290px] lg:min-w-[310px] bg-brand-card border border-gray-800 rounded-2xl overflow-hidden group hover:border-brand-yellow/50 transition-all flex flex-col justify-between shadow-lg">
+                    <div>
+                        <div class="aspect-reels bg-gray-900 relative overflow-hidden">
+                            <img src="imgwalterlucena.png" alt="Walter Lucena" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none"></div>
+                            
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-12 h-12 rounded-full bg-brand-yellow/90 text-brand-dark flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
+                                    <i class="fas fa-play ml-0.5 text-lg" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            
+                            <span class="absolute bottom-4 left-4 z-20 text-xs bg-brand-dark/90 px-2.5 py-1 rounded-md border border-gray-700 font-medium text-brand-yellow">Reel Oficial</span>
+                        </div>
+                        <div class="p-5">
+                            <span class="text-xs font-semibold text-brand-yellow uppercase tracking-wider">Walter Lucena - Advogado</span>
+                            <h4 class="text-lg font-bold text-white mt-1 mb-1">Conteúdo de Autoridade</h4>
+                            <p class="text-gray-400 text-xs mb-4 leading-relaxed">Posicionamento jurídico de alto padrão e clareza na mensagem.</p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-0">
+                        <a href="https://www.instagram.com/reel/DYkhCZUpt1v/?stkn=NDBibm9rc2wyeHF3" target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-gray-800 hover:bg-brand-yellow hover:text-brand-dark text-white font-semibold py-3 rounded-xl text-sm transition-all shadow-sm">
+                            <i class="fab fa-instagram mr-2" aria-hidden="true"></i> Assistir no Instagram
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 3: Insanus -->
+                <div class="min-w-[270px] sm:min-w-[290px] lg:min-w-[310px] bg-brand-card border border-gray-800 rounded-2xl overflow-hidden group hover:border-brand-yellow/50 transition-all flex flex-col justify-between shadow-lg">
+                    <div>
+                        <div class="aspect-reels bg-gray-900 relative overflow-hidden">
+                            <img src="imginsanus.png" alt="Insanus" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none"></div>
+                            
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-12 h-12 rounded-full bg-brand-yellow/90 text-brand-dark flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
+                                    <i class="fas fa-play ml-0.5 text-lg" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            
+                            <span class="absolute bottom-4 left-4 z-20 text-xs bg-brand-dark/90 px-2.5 py-1 rounded-md border border-gray-700 font-medium text-brand-yellow">Reel Oficial</span>
+                        </div>
+                        <div class="p-5">
+                            <span class="text-xs font-semibold text-brand-yellow uppercase tracking-wider">Insanus</span>
+                            <h4 class="text-lg font-bold text-white mt-1 mb-1">Produção Criativa</h4>
+                            <p class="text-gray-400 text-xs mb-4 leading-relaxed">Edição rítmica e moderna voltada para forte engajamento de marca.</p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-0">
+                        <a href="https://www.instagram.com/reel/DcJxlQMpGEF/?stkn=MTlpMmxuOG1hcHYwbA==" target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-gray-800 hover:bg-brand-yellow hover:text-brand-dark text-white font-semibold py-3 rounded-xl text-sm transition-all shadow-sm">
+                            <i class="fab fa-instagram mr-2" aria-hidden="true"></i> Assistir no Instagram
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 4: Tati Costa Nutricionista -->
+                <div class="min-w-[270px] sm:min-w-[290px] lg:min-w-[310px] bg-brand-card border border-gray-800 rounded-2xl overflow-hidden group hover:border-brand-yellow/50 transition-all flex flex-col justify-between shadow-lg">
+                    <div>
+                        <div class="aspect-reels bg-gray-900 relative overflow-hidden">
+                            <img src="imgtaticosta.png" alt="Tati Costa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none"></div>
+                            
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-12 h-12 rounded-full bg-brand-yellow/90 text-brand-dark flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
+                                    <i class="fas fa-play ml-0.5 text-lg" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            
+                            <span class="absolute bottom-4 left-4 z-20 text-xs bg-brand-dark/90 px-2.5 py-1 rounded-md border border-gray-700 font-medium text-brand-yellow">Reel Oficial</span>
+                        </div>
+                        <div class="p-5">
+                            <span class="text-xs font-semibold text-brand-yellow uppercase tracking-wider">Tati Costa - Nutricionista</span>
+                            <h4 class="text-lg font-bold text-white mt-1 mb-1">Educação & Saúde</h4>
+                            <p class="text-gray-400 text-xs mb-4 leading-relaxed">Vídeo explicativo limpo, estético e com excelente retenção.</p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-0">
+                        <a href="https://www.instagram.com/reel/DbgSqMSuwjG/?stkn=cWlmZmVjOGkyazgw" target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-gray-800 hover:bg-brand-yellow hover:text-brand-dark text-white font-semibold py-3 rounded-xl text-sm transition-all shadow-sm">
+                            <i class="fab fa-instagram mr-2" aria-hidden="true"></i> Assistir no Instagram
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 5: Maceió Ordinário -->
+                <div class="min-w-[270px] sm:min-w-[290px] lg:min-w-[310px] bg-brand-card border border-gray-800 rounded-2xl overflow-hidden group hover:border-brand-yellow/50 transition-all flex flex-col justify-between shadow-lg">
+                    <div>
+                        <div class="aspect-reels bg-gray-900 relative overflow-hidden">
+                            <img src="imgmaceioordinario.png" alt="Maceió Ordinário" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none"></div>
+                            
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-12 h-12 rounded-full bg-brand-yellow/90 text-brand-dark flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
+                                    <i class="fas fa-play ml-0.5 text-lg" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            
+                            <span class="absolute bottom-4 left-4 z-20 text-xs bg-brand-dark/90 px-2.5 py-1 rounded-md border border-gray-700 font-medium text-brand-yellow">Reel Oficial</span>
+                        </div>
+                        <div class="p-5">
+                            <span class="text-xs font-semibold text-brand-yellow uppercase tracking-wider">Maceió Ordinário</span>
+                            <h4 class="text-lg font-bold text-white mt-1 mb-1">Viral & Entretenimento</h4>
+                            <p class="text-gray-400 text-xs mb-4 leading-relaxed">Conteúdo de alto alcance em massa com corte rápido e envolvente.</p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-0">
+                        <a href="https://www.instagram.com/reel/DbI76RAR8jL/?stkn=ZGtocHhiZG54Zzlq" target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-gray-800 hover:bg-brand-yellow hover:text-brand-dark text-white font-semibold py-3 rounded-xl text-sm transition-all shadow-sm">
+                            <i class="fab fa-instagram mr-2" aria-hidden="true"></i> Assistir no Instagram
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-20 bg-brand-dark border-t border-gray-800 text-center">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-black text-white uppercase mb-4">Vamos criar algo incrível juntos?</h2>
+            <p class="text-gray-400 mb-6 max-w-xl mx-auto leading-relaxed">
+                Entre em contato direto pelo WhatsApp para orçamentos de captação, edição de vídeos ou projetos audiovisuais completos.
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <a href="https://wa.me/5582991649920?text=Olá%20Kauã,%20gostaria%20de%20um%20orçamento%20audiovisual!" target="_blank" rel="noopener noreferrer" class="bg-green-600 hover:bg-green-500 text-white font-bold px-8 py-4 rounded-xl transition-all flex items-center gap-3 shadow-lg shadow-green-600/20 text-lg">
+                    <i class="fab fa-whatsapp text-2xl" aria-hidden="true"></i> (82) 99164-9920
+                </a>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-sm text-gray-500">
+                <p>&copy; 2026 Kauã Zoeira. Todos os direitos reservados.</p>
+                <p class="mt-1">Desenvolvido com excelência por <span class="text-brand-yellow font-semibold">Militão Tech Solutions</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPT DE CONTROLE MANUAL PROFISSIONAL DO CARROSSEL -->
+    <script>
+        const carousel = document.getElementById('video-carousel');
+
+        function scrollPortfolio(direction) {
+            const scrollAmount = 330; 
+            if (direction === 'left') {
+                carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            } else {
+                carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            }
+        }
+    </script>
+
+</body>
+</html>
